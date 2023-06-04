@@ -1,65 +1,131 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #222;
-    color: #fff;
+/* styles.css */
+
+/* Réinitialisation des marges et des paddings */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour l'en-tête */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 48px;
+  color: gray;
+}
+
+
+.logo img {
+  width: 25%;
+  height: auto;
+  margin-left: 50px;
+  align-items: center;
+}
+
+nav{
+  width: 100%;
+  height: 75px;
+  margin-top: 50px;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-right: 200px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: gray;
+  font-size: 25px;
+  color: #333;
+}
+
+a:hover {
+  color:red;
+  text-decoration:none;
   }
-  
-  header {
-    background-color: #222;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .logo img {
-    height: 50px;
-    width: auto;
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    display: inline;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    padding: 10px;
-    color: #fff;
-  }
-  
-  main {
-    display: flex;
-  }
-  
-  aside {
-    width: 25%;
-    padding: 20px;
-  }
-  
-  section {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-content {
-    margin-top: 100%;
-    font-size: 14px;
-  }
-  
-  .footer-content a {
-    color: #fff;
-  }
-  
+
+/* Styles pour le contenu principal */
+main {
+  padding: 20px;
+}
+
+/* Styles pour la publicité */
+.pub {
+  width: 200px; 
+  height: 100vh; 
+  background-color: #f2f2f2; 
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+/* Styles pour le pied de page */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.d1{
+  width: 576px;
+  height: 432;
+  margin: 50px auto;
+  box-shadow: 0px 15px 10px -5px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+}
+
+.conteneur{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+.d2{
+  width: 100%;
+  height: 0px;
+  padding-top: 75%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: fondu 15s ease-in-out infinite both;
+}
+
+.d1:hover, .d2:hover{
+  animation-play-state: paused;
+}
+
+
+
+@keyframes fondu{
+  0%{background-image: url("../media/produitNumero1.jpg");}
+  33.33%{background-image: url("../media/Produit2.jpg");}
+  66.67%{background-image: url(../media/produit3.jpg);}
+  100%{background-image: url(../media/produitNumero1.jpg);}
+}
