@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../css/contactcss.css">
+
+    
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar">
+        <a class="logo" href="../index.html">
+            <img src="../image/logo.png" alt="Logo">
+          </a>
+          
+        <div class="nav-links">
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="produit.html">Produit</a></li>
+                <li><a href="nouveauProduit.html">Nouveau Produit</a></li>
+                <li><a href="cvQuentin">CV Quentin</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>            
+        </div>
+        <img src="../image/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+
+        <!-- librairy pour les image -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </nav>
+    
+    <header></header>
+    
+    <!-- Formulaire -->
+    <form class="form">
+        <h1>Contactez-nous</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+            <div class="gauche">
+                <div class="boite">
+                    <label>Votre prénom</label>
+                    <input type="text">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="boite">
+                    <label>Votre Nom</label>
+                    <input type="text">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="boite">
+                    <label>Votre age</label>
+                    <input type="number">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </div>
+                <div class="boite">
+                    <label>Votre mail</label>
+                    <input type="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="boite">
+                    <label>Votre mot de passe</label>
+                    <input type="password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <!-- juste pour que vous sachiez que je sais comment faire pour l'url
+
+
+                    <div class="boite">
+                    <label>url</label>
+                    <input type="url">
+                </div>
+
+
+                -->
+                <div class="boite">
+                    <label for="cars">Votre genre : </label>
+                        <select name="cars" id="cars" form="carform">
+                            <option value="Masculin">Masculin</option>
+                            <option value="Feminin">Feminin</option>
+                            <option value="Non-binaire">Non-binaire</option>
+                        </select>
+                </div>
+            </div>
+            <div class="droite">
+                <div class="boite">
+                    <label>Message</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="pied-formulaire" align="center">
+            <button>Envoyez le message</button>
+        </div>
+    </form>
+    
+    <!-- script pour la nav bar -->
+    <script src="../javascript/scriptNavBar.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 LilaRose Cosmetics - Tous droits réservés - contact webmaster
+        <a href="mailto:quentin@berthet.ch?subject=quentin@berthet.ch" title=""> quentin@berthet.ch</a> <br> sources : <br> <a href="https://www.freepik.com/free-photos-vectors/premium-background">background image</a></p>
+</footer> 
+</html>

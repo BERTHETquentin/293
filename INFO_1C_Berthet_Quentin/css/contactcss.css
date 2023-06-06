@@ -1,0 +1,175 @@
+/* reset de tous les paramètres par défaut générés par les moteurs de recherche */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 10w;
+    /* source : https://www.freepik.com/free-photos-vectors/premium-background */
+    background-image: url(../image/background\ image.jpg);
+    background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
+    color: gray;
+    z-index: 999;
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-end; /* Ajout de cette ligne */
+}
+
+.navbar a {
+    color: gray;
+}
+
+.navbar .logo {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .navbar .logo img {
+    margin-top: 0;
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+  }
+
+.navbar .nav-links ul {
+    display: flex;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+/* élément sur lequel se trouve l'utilisateur */
+.navbar .nav-links ul li.active a {
+    color: #ed3c57;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    width: 35px; 
+    z-index: 999;
+}
+
+footer {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  aside {
+    position: absolute;
+    background-color: #f2f2f2;
+    top: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+/* responsive de la nav bar */
+@media screen and (max-width: 900px) {
+    aside.mobile-menu {
+        display: none;
+    }
+
+    h1 {
+        top: 30%;
+        font-size: 28px;
+        left: 60%;
+    }
+
+    h1.mobile-menu {
+       display: none;
+    }
+    footer.mobile-menu  {
+        display: none;
+    }
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.308);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+}
