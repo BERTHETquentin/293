@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="../css/cssContact.css">
+  <script src="JavaScript/javaScript.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../media/logo.png" alt="Logo LilaRose Cosmetics" href="index.html">
+    </div>
+    <nav>
+      <ul>
+        <li class="transition"><a href="../index.html">Accueil - </a></li>
+        <li class="transition"><a href="../html/produit.html">liste produits - </a></li>
+        <li class="transition"><a href="../html/contenu2.html">Nouveau Produit - </a></li>
+        <li class="transition"><a href="../page perso/index.html">Page perso - </a></li>
+        <li class="transition"><a href="../html/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="traitement_formulaire.php" method="post"></form>
+
+    <h2>Contactez-nous</h2>
+  <form action="#" method="post">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+
+    
+
+    <!-- voici pour le mot de passe (caché sur le site web car na rien a voir avec mon formulaire mais comme ca vous voyez que je l'ai mis)-->
+
+    <!--
+    <label for="motdepasse">Mot de passe :</label>
+    <input type="password" id="motdepasse" name="motdepasse" required>
+    -->
+    <!-- pareil ici -->
+    <!--
+    <label for="age">Âge :</label>
+    <input type="number" id="age" name="age" required>
+    -->
+
+    <label for="courriel">adresse mail :</label>
+    <input type="email" id="courriel" name="courriel" required>
+
+    <!-- Pareil ici -->
+    <!--
+    <label for="site">url du site web</label>
+    <input type="url" id="site" name="site" required>
+    -->
+
+    <label for="date">Date de naissance :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label>Choix des produits :</label>
+
+    <label for="Shampoing">Shampoing</label>
+    <input type="checkbox" id="Shampoing" name="Shampoing">
+    
+    <label for="Créme">Créme</label>
+    <input type="checkbox" id="Créme" name="Créme">
+    
+    <label for="Savon">Déodorant</label>
+    <input type="checkbox" id="Déodorant" name="Déodorant">
+
+    <label for="Savon">Déodorant 2</label>
+    <input type="checkbox" id="Déodorant" name="Déodorant">
+    
+
+    <label>Commentaires :</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Envoyer">
+  </form>
+  </main>
+</body>
+</html>
