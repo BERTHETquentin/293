@@ -15,7 +15,7 @@ body {
     background-image: url(../image/background\ image.jpg);
     background-size: cover;
     padding-bottom: 50px; /* Hauteur du pied de page */
-    overflow-x: hidden; /* Ajout de cette ligne */
+    overflow-x: hidden;
 }
 
 .navbar {
