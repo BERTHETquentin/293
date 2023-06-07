@@ -4,30 +4,19 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    
 }
 
 body {
+    margin: 0px;
+    position: relative;
     font-family: sans-serif;
-}
-
-header {
     height: 100vh;
-    width: 10w;
     /* source : https://www.freepik.com/free-photos-vectors/premium-background */
     background-image: url(../image/background\ image.jpg);
     background-size: cover;
-}
-
-h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 48px;
-    color: gray;
-    z-index: 999;
+    padding-bottom: 50px; /* Hauteur du pied de page */
+    
 }
 
 .navbar {
@@ -39,7 +28,7 @@ h1 {
     font-weight: bold;
     width: 100%;
     box-sizing: border-box;
-    justify-content: flex-end; /* Ajout de cette ligne */
+    justify-content: flex-end;
 }
 
 .navbar a {
@@ -50,14 +39,14 @@ h1 {
     display: inline-block;
     font-size: 2em;
     font-weight: bold;
-  }
-  
-  .navbar .logo img {
+}
+
+.navbar .logo img {
     margin-top: 0;
     display: block;
     max-width: 30%;
     max-height: 30%;
-  }
+}
 
 .navbar .nav-links ul {
     display: flex;
@@ -90,20 +79,7 @@ h1 {
     width: 35px; 
     z-index: 999;
 }
-
-footer {
-    display: block;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  aside {
+aside {
     position: absolute;
     background-color: #f2f2f2;
     top: 50%;
@@ -111,20 +87,117 @@ footer {
     margin: 20px;
     border-radius: 5px;
 }
-/* responsive de la nav bar */
+/* Positionnement du footer */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* style pour le formulaire */
+.form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.form h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+}
+
+.form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.form .corps-formulaire .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form .corps-formulaire .gauche .boite input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 5px;
+}
+
+.form .corps-formulaire .gauche .boite i{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #747cdf;
+}
+
+.form .corps-formulaire .droite{
+    margin-left: 40px;
+}
+
+.form .corps-formulaire .droite .boite{
+    height: 100%;
+}
+
+.form .corps-formulaire .droite .boite textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+
+.form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #747cdf;
+    border-radius: 5px;
+    color: #f8f8f8;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+
+
+/* responsive */
 @media screen and (max-width: 900px) {
-    aside.mobile-menu {
+
+    /* je ne comprend pas pourquoi le formulaire ne veut pas s'enlever */
+    .form.mobile-menu{
         display: none;
     }
 
-    h1 {
-        top: 30%;
-        font-size: 28px;
-        left: 60%;
-    }
-
-    h1.mobile-menu {
-       display: none;
+    .form{
+        top: 60%;
     }
     footer.mobile-menu  {
         display: none;

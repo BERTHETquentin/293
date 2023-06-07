@@ -1,34 +1,35 @@
-/* reset de tous les paramètres par défaut générés par les moteurs de recherche */
+/* Reset de tous les paramètres par défaut générés par les moteurs de recherche */
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    
 }
 
+/* Style de la balise body */
 body {
     position: relative;
     font-family: sans-serif;
     height: 100vh;
-    width: 10w;
-    /* source : https://www.freepik.com/free-photos-vectors/premium-background */
+    width: 100%;
+    /* Source : https://www.freepik.com/free-photos-vectors/premium-background */
     background-image: url(../image/background\ image.jpg);
     background-size: cover;
 }
 
+/* Style de la balise h1 */
 h1 {
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 48px;
     color: gray;
     z-index: 999;
 }
 
+/* Style de la balise nav avec la classe navbar */
 .navbar {
     position: absolute;
     padding: 50px;
@@ -41,16 +42,19 @@ h1 {
     justify-content: flex-end;
 }
 
+/* Style des liens dans la balise nav */
 .navbar a {
     color: gray;
 }
 
+/* Style du logo dans la balise nav avec la classe logo */
 .navbar .logo {
     display: inline-block;
     font-size: 2em;
     font-weight: bold;
 }
 
+/* Style de l'image dans le logo */
 .navbar .logo img {
     margin-top: 0;
     display: block;
@@ -58,21 +62,24 @@ h1 {
     max-height: 30%;
 }
 
+/* Style de la liste à puces dans la balise nav avec la classe nav-links */
 .navbar .nav-links ul {
     display: flex;
 }
 
+/* Style des éléments de la liste à puces dans la balise nav */
 .navbar .nav-links ul li {
     margin: 0 25px;
 }
 
-/* élément sur lequel se trouve l'utilisateur */
+/* Style de l'élément actif dans la liste à puces dans la balise nav */
 .navbar .nav-links ul li.active a {
     color: #ed3c57;
     text-decoration: underline;
     font-weight: 600;
 }
 
+/* Style supplémentaire du logo dans la balise nav */
 .navbar .logo {
     position: absolute;
     top: 50px;
@@ -81,18 +88,27 @@ h1 {
     font-weight: bold;
 }
 
+/* Style du menu hamburger dans la balise nav avec la classe menu-hamburger */
 .navbar .menu-hamburger {
     display: none;
     position: fixed;
     top: 50px;
     right: 30px;
-    width: 35px; 
+    width: 35px;
     z-index: 999;
 }
 
+/* Style de l'image */
+.image {
+    margin-left: 35%;
+    margin-top: 200px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* Style du footer */
 footer {
     display: block;
-    height: 45px;
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -101,138 +117,60 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-  }
-  
-  
-  .cv {
-    width: 800px;
-    padding-top: 300px;
+}
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  }
-
-  .titre {
-    margin: 0 0 16px 0;
-    padding: 0 0 16px 0;
-    font-size: 42px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    border-bottom: 1px solid #999;
-  }
-  #pic {
-    float: right;
-    margin: -30px 0 0 0;
-  }
-  
-  #objective {
-    width: 500px;
-  }
-  
-  #objective p {
-    font-family: Georgia, Serif;
-    font-style: italic;
-    color: #666;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 0 0 6px 0;
-    position: relative;
-  }
-  
-  
-  h3 {
-    font-size: 16px;
-    margin: 0 0 6px 0;
-    position: relative;
-  }
-  
-  h3 span {
+/* Style de la balise aside */
+aside {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 16px;
-  }
-  
-  p {
-    margin: 0 0 16px 0;
-  }
-  
-  dt {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: right;
-    padding: 0 26px 0 0;
-    width: 150px;
-    float: left;
-    height: 100px;
-    border-right: 1px solid #999;
-  }
-  
-  dd {
-    width: 600px;
-    float: right;
-  }
-  
-  dd.clear {
-    float: none;
-    margin: 0;
-    height: 15px;
-  }
-  
-  .clear {
-    clear: both;
-  }
-  
-  .gauche {
-    float: left;
-  }
-  
-  .droite {
-    text-align: right;
-  }
-  
-  .link {
-    color: #0000EE;
-  }
-  
-/* responsive */
+    background-color: #f2f2f2;
+    top: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Media Query pour les écrans de petite taille */
 @media screen and (max-width: 900px) {
-    .cv.mobile-menu{
-        display: none;
-    }
+    /* Style de la balise aside avec la classe mobile-menu */
     aside.mobile-menu {
         display: none;
     }
 
+    /* Style de la balise h1 pour les écrans de petite taille */
     h1 {
         top: 30%;
         font-size: 28px;
         left: 60%;
     }
 
+    /* Style de la balise h1 avec la classe mobile-menu */
     h1.mobile-menu {
-       display: none;
-    }
-    footer.mobile-menu  {
         display: none;
     }
+
+    /* Style du footer avec la classe mobile-menu */
+    footer.mobile-menu {
+        display: none;
+    }
+
+    /* Style supplémentaire de la balise nav pour les écrans de petite taille */
     .navbar {
         padding: 0;
     }
 
+    /* Style supplémentaire du logo dans la balise nav pour les écrans de petite taille */
     .navbar .logo {
         position: absolute;
         top: 40px;
         left: 30px;
     }
 
+    /* Style du menu hamburger dans la balise nav pour les écrans de petite taille */
     .navbar .menu-hamburger {
         display: block;
     }
 
+    /* Style des liens de la balise nav avec la classe nav-links pour les écrans de petite taille */
     .nav-links {
         top: 0;
         left: 0;
@@ -248,16 +186,19 @@ footer {
         transition: all 0.5s ease;
     }
 
+    /* Style de la balise nav-links avec la classe mobile-menu */
     .nav-links.mobile-menu {
         margin-left: 0;
     }
 
+    /* Style de la liste à puces dans la balise nav-links */
     .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    /* Style des éléments de la liste à puces dans la balise nav avec la classe nav-links ul li */
     .navbar .nav-links ul li {
         margin: 25px 0;
         font-size: 1.2em;

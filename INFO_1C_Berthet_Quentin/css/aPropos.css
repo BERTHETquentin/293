@@ -1,17 +1,16 @@
-/* reset de tous les paramètres par défaut générés par les moteurs de recherche */
+/* Reset de tous les paramètres par défaut générés par les moteurs de recherche */
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espaces internes par défaut */
+    text-decoration: none; /* Supprime la décoration de texte par défaut */
+    list-style: none; /* Supprime les puces des listes par défaut */
 }
 
 body {
     position: relative;
     font-family: sans-serif;
     height: 100vh;
-    width: 10w;
+    width: 100%;
     /* source : https://www.freepik.com/free-photos-vectors/premium-background */
     background-image: url(../image/background\ image.jpg);
     background-size: cover;
@@ -66,7 +65,7 @@ h1 {
     margin: 0 25px;
 }
 
-/* élément sur lequel se trouve l'utilisateur */
+/* Élément sur lequel se trouve l'utilisateur */
 .navbar .nav-links ul li.active a {
     color: #ed3c57;
     text-decoration: underline;
@@ -86,7 +85,7 @@ h1 {
     position: fixed;
     top: 50px;
     right: 30px;
-    width: 35px; 
+    width: 35px;
     z-index: 999;
 }
 
@@ -100,50 +99,51 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-  }
+}
 
-  p {
+p {
     color: #666;
     margin-left: 35%;
     margin-right: 35%;
-
     line-height: 1.5;
-  }
-  
-  .company-info {
+}
+
+.company-info {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 250px;
     margin-bottom: 20px;
-  }
-  
-  .company-info img {
+}
+
+.company-info img {
     display: block;
     max-width: 150px;
     max-height: 150px;
-  }
-  
-  .company-info h2 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .company-info p {
-    margin: 5px 0;
-    
 }
 
-/* je n'arrive pas a mettre une border pour mon container
+.company-info h2 {
+    font-size: 24px;
+    margin: 0;
+}
 
-.container{
+.company-info p {
+    margin: 5px 0;
+}
+
+video {
+    padding-top: 50px;
+    margin-left: 25%;
+}
+
+/* Je n'arrive pas à mettre une bordure pour mon conteneur
+.container {
     border: solid 1px black;
 }
 */
-  
-/* responsive */
-@media screen and (max-width: 900px) {
 
+/* Responsive */
+@media screen and (max-width: 900px) {
     h1 {
         top: 30%;
         font-size: 28px;
@@ -151,11 +151,13 @@ footer {
     }
 
     h1.mobile-menu {
-       display: none;
-    }
-    footer.mobile-menu  {
         display: none;
     }
+
+    footer.mobile-menu {
+        display: none;
+    }
+
     .navbar {
         padding: 0;
     }

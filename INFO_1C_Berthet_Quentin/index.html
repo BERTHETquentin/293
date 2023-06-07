@@ -1,45 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>LilaRose Cosmetics</title>
-  <link rel="stylesheet" type="text/css" href="css/cssIndex.css">
-  <script src="JavaScript/javaScript.js"></script>
+    <!-- Déclaration du type de document -->
+    <meta charset="UTF-8">
+    <!-- Définition de la compatibilité du navigateur -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Adaptation à la taille de l'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="media/logo.png" alt="Logo LilaRose Cosmetics" href="index.html">
-    </div>
-    <nav>
-      <ul>
-        <li class="transition"><a href="index.html">Accueil - </a></li>
-        <li class="transition"><a href="html/produit.html">Produits - </a></li>
-        <li class="transition"><a href="html/contenu2.html">Nouveau Produit - </a></li>
-        <li class="transition"><a href="page perso/index.html">Page perso - </a></li>
-        <li class="transition"><a href="html/contact.html">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+        <a class="logo" href="index.html">
+            <!-- Logo de l'entreprise -->
+            <img src="image/logo.png" alt="Logo">
+        </a>
+        
+        <div class="nav-links">
+            <ul>
+                <!-- Lien actif pour la page d'accueil -->
+                <li class="active"><a href="#">Accueil</a></li>
+                <!-- Lien vers la page "Produit" -->
+                <li><a href="html/produit.html">Produit</a></li>
+                <!-- Lien vers la page "A propos" -->
+                <li><a href="html/aPropos.html">A propos</a></li>
+                <!-- Lien vers le CV de Quentin -->
+                <li><a href="html/cvQuentin.html">CV Quentin</a></li>
+                <!-- Lien vers la page de contact -->
+                <li><a href="html/contact.html">Contact</a></li>
+            </ul>            
+        </div>
+        <!-- Bouton de menu hamburger -->
+        <img src="image/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
     </nav>
-  </header>
-
-  <main>
-    <!-- Contenu principal de la page -->
     <h1>LilaRose Cosmetics</h1>
 
-    <!-- liste deroulante d'accueil -->
-    <div class="d1"></div>
-    <div class="conteneur">
-        <div class="d2"></div>
-    </div>
+    <!-- Image principale du logo -->
+    <img class="image" src="image/logo.png" alt="logo en image principal">
 
-  </main>
+    <aside>
+        <h2>Asside</h2>
+        <!-- Contenu publicitaire -->
+        <p>Pub</p>
+    </aside>
 
-  <aside>
-    <!-- Contenu de la publicité -->
-    <img class="pub" src="media/logo.png" alt="pub" href="index.html">
-  </aside>
-
-  <footer>
-    <p>&copy; 2023 LilaRose Cosmetics. Tous droits réservés.</p>
-  </footer>
+    <header></header>
+    
+    
+    <footer>
+        <!-- Informations de copyright et de contact -->
+        <p>&copy; 2023 LilaRose Cosmetics - Tous droits réservés - contact webmaster
+            <a href="mailto:quentin@berthet.ch?subject=quentin@berthet.ch" title=""> quentin@berthet.ch</a> <br> sources : <br> <a href="https://www.freepik.com/free-photos-vectors/premium-background">background image</a></p>
+    </footer> 
+    
+    <!-- Script JavaScript pour la barre de navigation -->
+    <script src="javascript/scriptNavBar.js"></script>
 </body>
 </html>
