@@ -89,6 +89,13 @@ h1 {
     z-index: 999;
 }
 
+.image{
+    margin-left: 35%;
+    margin-top: 200px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
 footer {
     display: block;
     background-color: #333;
